@@ -1,0 +1,218 @@
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mainarea{
+    background-image: url('https://images.pexels.com/photos/858094/pexels-photo-858094.jpeg?auto=compress&cs=tinysrgb&w=600');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+header h1{
+    text-decoration: None;
+    display: inline;
+    color:yellow;
+    min-width: 120px;  
+}
+nav a {
+    /* flex: 2; */
+    color: yellow;
+    text-decoration: none;
+}
+.menu1{
+    text-align: center;
+    /* justify-content:space-around; */
+}
+.location{
+    /* justify-content: space-around; */
+    text-align: center;
+}
+nav a i{
+    flex: 1;
+    margin-right: .5em;
+}
+.companyname i{
+    margin-right: .2em;
+}
+header{
+    display:flex;
+    padding: 1em;
+    flex-wrap: wrap;
+    row-gap: 1em;
+}
+.companyname{
+    display: flex;
+    flex: 3;
+    min-width: 260px;
+    font-size: 1.25em;
+}
+header h1,nav h3{
+    margin-right: .5em;
+}
+nav{
+    display: flex;
+    flex:2;
+    align-items: center;
+    color: yellow;
+}
+
+nav h3:hover{
+    cursor: grab;
+    color: greenyellow;
+}
+.bookingarea{
+    margin-top: 120px;
+    margin-left: 40px;
+}
+.tagline{
+    font-size: 45px;
+    color: rgb(164, 24, 24);
+}
+.tagline1{
+    margin-top: 10px;
+    font-size:28px ;
+    color: rgb(181, 181, 39);
+}
+.callus{
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgb(213, 189, 189);
+}
+.mainarea button{
+    margin-top: 19px;
+    border-radius: 10px;
+    width: 40vh;
+    padding: 5px;
+    background-color: green;
+    border: 1px solid green;
+}
+button:hover{
+    cursor: pointer;
+}
+.bookingarea button a{
+    text-decoration: none;
+    color: white;
+}
+#menuheading,#location1{
+    background:linear-gradient(to right,rgb(90, 89, 89),rgb(65, 65, 65));
+    font-size: 40px;
+    color: red;
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background:linear-gradient(to right,rgb(90, 89, 89),rgb(65, 65, 65));
+}
+.menu tr{
+    color: white;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.menu th{
+    color: rgb(129, 244, 129);
+    font-size: 1.8em;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+table{
+    width: 100%;
+    padding: 16px;
+}
+.locations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    background:linear-gradient(to right,rgb(90, 89, 89),rgb(65, 65, 65));
+}
+.heading{
+    font-size: 1.75em;
+    color:rgb(129, 208, 133);
+    display: flex;
+    justify-content: center;
+}
+.locations div{
+    padding: 10px;
+    flex: 1;
+}
+.locations address{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    padding: 20px;
+}
+@media screen and (max-width:1536px) {
+    .menu1, .location fa{
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+        flex-direction: column;
+        justify-content: center;
+    }  
+    
+}   
+@media  screen and (min-width:340px) {
+    .button{
+        display: flex;
+        align-items: center;
+        flex-direction:colomn;
+        justify-content:start;
+    }
+} 
+
+footer{
+    background-color: rgb(52, 51, 51);
+    color: white;
+}
+footer .copyright{
+    margin-left: 20px;
+}
+.socialmedia ul{
+    display: flex;
+    padding: 0px;
+}
+.socialmedia ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 15px;
+}
+.socialmedia ul li .fab{
+    font-size: 25px;
+    line-height: 40px;
+    color: black;
+    transition: .6s;
+}
+.socialmedia ul li .fab:hover{
+    color:white;
+    cursor: pointer;
+}
+.socialmedia ul li a{
+    position: relative;
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 5px 4px rgb(0, 0,0,.5);
+}
+.socialmedia ul li a:hover{
+    transform: translate(0,-10%);
+}
+.socialmedia ul li:nth-child(1) a:hover{
+    background-color: rgb(30, 123, 199);
+}
+.socialmedia ul li:nth-child(2) a:hover{
+    background-color: rgb(226, 49, 49);
+}
+.socialmedia ul li:nth-child(3) a:hover{
+    background-color: rgb(0, 140, 255);
+}
